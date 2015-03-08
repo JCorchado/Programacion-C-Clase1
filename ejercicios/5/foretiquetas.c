@@ -7,12 +7,26 @@
  * una 'a' seguida de una 's' y devolvemos 0.
 
 /* Bibliotecas a incluir */
+#include <stdio.h>
 
 int main()
 {
 	/* Declaración de variables */
-
+	char cadena[10]="ajfgtas213";
+	int i=0;
+	int resultadoFor;
 	/* Código usando condicional for */
-
+	for(i;i<12;i++){
+		if(cadena[i]=='a')
+			if(cadena[i+1]=='s'){
+				goto es_s;
+			}else
+				printf("Tenemos una a pero NO una s, devolvemos un 0 \n");
+				resultadoFor=0;
+				break;
+	}
 	/* Declaracion de etiquetas */
+	es_s:
+		printf("Tenemos una a seguid de una s, devolvemos 1 \n");
+		resultadoFor=1;
 }

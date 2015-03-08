@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-
+i
 //Pre: Entra una letra
 //Post: Devolver un 1 si la letra es una letra 'a'. Si no, devolver 0.
 tipo_de_dato es_una_A(char letra)
 {
+	int resultadoA=0;
+	if(letra=='a')
+		resultadoA=1;
+	
+	return resultadoA;
 }
 
 tipo_de_dato main()

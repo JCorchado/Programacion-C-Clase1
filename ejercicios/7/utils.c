@@ -7,8 +7,15 @@
  */
 
 /* Zona para incluir las bibliotecas o cabeceras */
-
-
-
+/* Declaracion de la funcion */
+#include <util.h>
 
 /* Declaracion de la funcion */
+int esPar(int numero){
+	int resPar=0;
+	if(numero%2==0)
+		resPar=1;
+
+	return resPar;
+
+}

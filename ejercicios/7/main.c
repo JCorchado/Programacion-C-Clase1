@@ -15,7 +15,24 @@
 /* Zona para declarar la funcion estática */
 
 /* Programa Principal */
-void main ()
-{
+#include <stdio.h>
+#include <utils.h>
 
+/* Zona para declarar la funcion estática */
+static int multiplicar_numero_secreto(int argNumSec)
+{
+	return argNumSec*1235;//DEMASIADO GRANDE???!!!
+}
+
+/* Programa Principal */
+int main (int n)
+{	
+	int resMult;
+	if(esPar(n)==1){
+		resMult=multiplicar_numero_secreto(n);
+		printf("El numero recibido por parametro es PAR \n");
+	}else{
+		resMult=-1;
+	}
+	return resMult;
 }
