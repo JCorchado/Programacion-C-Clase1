@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 int cuenta_numero_letras(char cadena[],char letra);
 int compara_cadena(char* cadena1,char* cadena2);
 int tipo_de_letra(char letra);
